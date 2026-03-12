@@ -36,7 +36,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-artifact@v4
               with:
-                  name: uv-artifcat
+                  name: uv-artifact
                   path: artifacts/
 
     deploy:
@@ -47,5 +47,5 @@ jobs:
             - name: Download artifact
               uses: actions/download-artifact@v4
               with:
-                  name: uv-artifcat
+                  name: uv-artifact
                   path: artifacts/
