@@ -38,3 +38,14 @@ jobs:
               with:
                   name: uv-artifcat
                   path: artifacts/
+
+    deploy:
+        name: "Deploy Dev"
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Download artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: uv-artifcat
+                  path: artifacts/
