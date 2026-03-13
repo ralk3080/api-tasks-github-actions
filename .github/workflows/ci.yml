@@ -89,5 +89,5 @@ jobs:
           - name: Deploy to Azure Web App
             uses: azure/webapps-deploy@v2
             with: 
-                app-name: app-api-net-uv-dev
+                app-name: app-api-net-uv-prod
                 package: artifacts/            
